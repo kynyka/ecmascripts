@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         9baka-openBox
-// @namespace    http://tampermonkey.net/
+// @namespace    Made by kynyka!
 // @version      0.1
 // @description  try to take over the world!
-// @author       You
+// @author       kynyka
 // @include      http://bbs.9moe.com/kf_fw_ig_mybp.php
 // @grant        none
 // ==/UserScript==
@@ -17,7 +17,7 @@
         var chuanQiCount = parseInt(document.querySelector('#alldiv > table:nth-child(6) > tbody > tr > td:nth-child(2) > div:nth-child(6) > table > tbody > tr:nth-child(2) > td:nth-child(4) > span:nth-child(2)').innerText);
 
         var countArr = [puTongCount, xingYunCount, xiYouCount, chuanQiCount];
-        var numArr = ['1', '2', '3', '4'];
+        var numArr = ['1', '2', '3', '4']; // 原本页面上函数所对应的开盒的参数
         // function sortNum_Asc(a,b) {
         //     return a - b  // b - a  Desc
         // }

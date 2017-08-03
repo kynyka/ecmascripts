@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         9baka-smeltWeapons
-// @namespace    http://tampermonkey.net/
+// @namespace    Made by kynyka!
 // @version      0.1
 // @description  try to take over the world!
-// @author       You
+// @author       kynyka
 // @match        http://bbs.9moe.com/kf_fw_ig_mybp.php
 // @grant        none
 // ==/UserScript==
@@ -21,7 +21,7 @@
 
     function checkLength(iMax){
         if (iMax < 10) flag = false;
-        console.info('flag:',flag);
+        console.log('%cflag:','color:blue',flag);
         return flag;
     }
 
@@ -39,7 +39,7 @@
                 var itemName = allTr[i].lastChild.firstChild;
                 if (itemName) { // 保险起见加上的而已
                     if (itemName.innerText != nameParams[0]) { // && itemName.innerText != nameParams[1] && itemName.innerText != nameParams[2]
-                        console.log('Melt_id>>', itemId);
+                        console.log('开始熔炼 —— 装备id:', itemId);
                         rlzb(itemId);
                     } else {
                         console.warn('略过本装备: %s——%s', itemId, itemName.innerText);
