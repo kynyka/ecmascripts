@@ -1,0 +1,1 @@
+These ecmascripts were created to help do with some work when I was browsing some forum a long time ago.
